@@ -1,6 +1,14 @@
 
-body {
+html body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  padding: 10px;
+  padding-bottom: 60px;
 }
 .container {
   display: grid;
@@ -10,6 +18,8 @@ body {
   grid-template-rows: min-content auto;
   gap: 20px 20px;
   grid-auto-flow: row;
+  min-height: 100%;
+  position: relative;
   grid-template-areas:
     ". Navbar Navbar Navbar ."
     ". Background Background Background ."
@@ -78,9 +88,9 @@ header {
   justify-content: center;
   font-family: rob;
   position: absolute;
-  top: 39%;
+  top: 30%;
   left: 53%;
-  font-size: 90px;
+  font-size: 60px;
   color: white;
   transform: translate(-50%, -50%);
 }
@@ -239,7 +249,54 @@ header {
   height: 100px;
   grid-area: button4;
 }
+.footer-container {
+  background-color: black;
+  padding: 4rem 0 4rem 0;
+}
+.footer {
+  width: 80%;
+  height: 40vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
 
+.footer-heading h2 {
+  margin-bottom: 2rem;
+}
+
+.footer-heading h2 {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.footer-heading a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  padding: 20px;
+}
+#sticky-footer{
+  font-family: rob;
+  position: absolute; 
+  bottom: 0;
+  width: 1920px;
+  height: 30px;
+}
+.maps {
+  margin-top: 10px;
+  margin-right: 100px;
+  width: 25%;
+  height: 70%;
+}
 html, body , .container {
   height: 100%;
   margin: 0;
