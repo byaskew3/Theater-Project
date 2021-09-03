@@ -1,0 +1,250 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 0.1fr 1.5fr 4.5fr 1.5fr 0.1fr;
+  grid-template-rows: 0.3fr 2.6fr 0.3fr 0.3fr 0.8fr 0.8fr 0.8fr 0.8fr 1.8fr;
+  grid-template-rows: min-content auto;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". Navbar Navbar Navbar ."
+    ". Background Background Background ."
+    ". Whitespace Whitespace Whitespace ."
+    ". . Datebar . ."
+    ". . Contentbox1 . ."
+    ". . Contentbox2 . ."
+    ". . Contentbox3 . ."
+    ". . Contentbox4 . ."
+    ". Footer Footer Footer .";
+}
+
+/* navbar styling */
+.name {
+  color: white;
+}
+li, a, button {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: black;
+}
+
+.name {
+  cursor: pointer;
+}
+
+.navlinks {
+  list-style: none;
+}
+
+.navlinks li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navlinks li a {
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+  color: rgb(121, 121, 121);
+}
+
+.bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height: auto;
+  position:static
+}
+
+.text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: rob;
+  position: absolute;
+  top: 39%;
+  left: 53%;
+  font-size: 90px;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+.Datebar {
+  width: 93%;
+  height: 50%;
+  padding: 5px 0 0 25px;
+  background-color: rgb(246, 246, 246);
+  border: 1px solid rgb(207, 207, 207);
+  box-shadow: 2px 3px 3px rgb(187, 187, 187); 
+  grid-area: Datebar; 
+}
+
+.line {
+  padding-top: 25px;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  display: block;
+}
+
+.Contentbox1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "icon1 lettering1 button1"
+    "icon1 lettering1 button1"
+    "icon1 lettering1 button1";
+  grid-area: Contentbox1;
+}
+
+.icon1 { 
+  grid-area: icon1;
+  background-image: url(/images/a-raisin-in-the-sun-theater-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.lettering1 {
+  padding-left: 25px; 
+  font-size: 12px;
+  grid-area: lettering1; 
+}
+
+.button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  grid-area: button1; }
+
+.btn-warning{
+  background-color: rgb(241, 189, 68);
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  box-shadow: 2px 3px 3px rgb(187, 187, 187);
+  color: white;
+}
+
+.Contentbox2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "icon2 lettering2 button2"
+    "icon2 lettering2 button2"
+    "icon2 lettering2 button2";
+  grid-area: Contentbox2;
+}
+
+.icon2 { 
+  grid-area: icon2; 
+  background-image: url(/images/a-raisin-in-the-sun-theater-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.lettering2 {
+  padding-left: 25px;  
+  font-size: 12px;
+  grid-area: lettering2; 
+}
+
+.button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; 
+  grid-area: button2; }
+
+.Contentbox3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "icon3 lettering3 button3"
+    "icon3 lettering3 button3"
+    "icon3 lettering3 button3";
+  grid-area: Contentbox3;
+}
+
+.icon3 { 
+  grid-area: icon3; 
+  background-image: url(/images/a-raisin-in-the-sun-theater-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.lettering3 {
+  padding-left: 25px; 
+  font-size: 12px; 
+  grid-area: lettering3; 
+}
+
+.button3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; 
+  grid-area: button3; }
+
+.Contentbox4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "icon4 lettering4 button4"
+    "icon4 lettering4 button4"
+    "icon4 lettering4 button4";
+  grid-area: Contentbox4;
+}
+
+.icon4 { 
+  background-image: url(/images/a-raisin-in-the-sun-theater-1.png);
+  grid-area: icon4;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.lettering4 {
+  padding-left: 25px; 
+  font-size: 12px; 
+  grid-area: lettering4; 
+}
+
+.button4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  grid-area: button4;
+}
+
+html, body , .container {
+  height: 100%;
+  margin: 0;
+}
+  
+/* For presentation only, no need to copy the code below */
+
+
